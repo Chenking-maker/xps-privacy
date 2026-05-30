@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>隐私政策 - X Perspective Switcher</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      color: #ffffff;
+      line-height: 1.8;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 40px;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 8px;
+      color: #ffffff;
+    }
+    .subtitle {
+      color: rgba(255,255,255,0.5);
+      font-size: 14px;
+      margin-bottom: 32px;
+    }
+    h2 {
+      font-size: 18px;
+      margin: 32px 0 16px;
+      color: #ffffff;
+    }
+    p {
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 16px;
+      font-size: 14px;
+    }
+    ul {
+      margin: 16px 0 16px 24px;
+      color: rgba(255,255,255,0.7);
+    }
+    li {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+    .highlight {
+      background: rgba(255,255,255,0.08);
+      padding: 16px;
+      border-radius: 8px;
+      border-left: 3px solid rgba(255,255,255,0.3);
+      margin: 16px 0;
+    }
+    .contact {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      text-align: center;
+    }
+    .contact a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">X Perspective Switcher</p>
+
+    <h2>1. Data Collection</h2>
+    <p>This extension only collects the following necessary information:</p>
+    <ul>
+      <li><strong>AI API Key</strong>: User-configured API keys for OpenAI/DeepSeek/etc., stored locally in the browser only</li>
+      <li><strong>Usage Records</strong>: Generation history, membership status, usage count, stored locally in the browser only</li>
+      <li><strong>Custom Perspectives</strong>: User-created custom perspective configurations, stored locally in the browser only</li>
+    </ul>
+
+    <h2>2. Data Storage</h2>
+    <div class="highlight">
+      <p><strong>Important: All data is stored locally in the user's browser and is not uploaded to any server.</strong></p>
+    </div>
+    <p>We use Chrome's storage API to save data locally on your device:</p>
+    <ul>
+      <li>chrome.storage.local - For storing configuration and history</li>
+      <li>chrome.storage.session - For temporary storage of sensitive information</li>
+    </ul>
+
+    <h2>3. Data Transmission</h2>
+    <p>The extension only communicates with external services in the following cases:</p>
+    <ul>
+      <li><strong>AI Content Generation</strong>: Selected X post content is sent to the user-configured AI service provider (OpenAI, DeepSeek, Anthropic, SiliconFlow, etc.)</li>
+      <li><strong>Redemption Code Verification</strong>: Membership redemption codes are verified with our validation server</li>
+    </ul>
+
+    <h2>4. Data Security</h2>
+    <p>We take the following measures to protect your data:</p>
+    <ul>
+      <li>API keys are stored in session storage and automatically cleared when the browser is closed</li>
+      <li>All local data is only accessible by the extension itself</li>
+      <li>Your X account information is never shared with any third parties</li>
+    </ul>
+
+    <h2>5. User Rights</h2>
+    <p>You have the following rights:</p>
+    <ul>
+      <li>Clear extension data at any time (via "Clear data" in extension management)</li>
+      <li>Uninstall the extension at any time, all local data will be deleted</li>
+      <li>Export your generation history (in the Settings page "History" tab)</li>
+    </ul>
+
+    <h2>6. Third-Party Services</h2>
+    <p>This extension integrates the following third-party AI services. When using these services, you must comply with their privacy policies:</p>
+    <ul>
+      <li>OpenAI (https://openai.com/privacy)</li>
+      <li>DeepSeek (https://www.deepseek.com/privacy)</li>
+      <li>Anthropic (https://www.anthropic.com/privacy)</li>
+      <li>SiliconFlow (https://siliconflow.cn/privacy)</li>
+    </ul>
+
+    <h2>7. Privacy Policy Updates</h2>
+    <p>We may update this privacy policy from time to time. Updated policies will be notified to users within the extension.</p>
+    <p>Last updated: June 30, 2025</p>
+
+    <div class="contact">
+      <p>For privacy-related questions, please contact:</p>
+      <p><a href="https://x.com/ChenkinGs" target="_blank">X @ChenkinGs</a></p>
+    </div>
+  </div>
+</body>
+</html>
